@@ -11,7 +11,7 @@ void render(SDL_Window* window,SDL_Renderer* renderer){
         (int)ball.y,
         (int)ball.width,
         (int)ball.height
-    };
+    }; 
     SDL_SetRenderDrawColor(renderer,255,255,255,255);
     //SDL_RenderFillRect(renderer,&ball_in_game);
     SDL_Rect paddle_in_game = {
@@ -46,6 +46,12 @@ void render_ball(SDL_Renderer* renderer){
 void score_board(SDL_Window* window,SDL_Renderer* renderer){
     int score = 0;
     char fullstr[50] = "SCORE - ";
+    SDL_Rect score_rect = {
+        10,
+        0,
+        50,
+        50
+    };
     SDL_Color color = {255,255,255,255};
     SDL_Surface *text_surface;
     TTF_Font *font;
@@ -64,7 +70,7 @@ void score_board(SDL_Window* window,SDL_Renderer* renderer){
         printf("%s",SDL_GetError());
     } else {
         SDL_Texture *text = SDL_CreateTextureFromSurface(renderer,text_surface);
-        blit(renderer,text,0,0,50,50);
+        blit(renderer,text,score_rect.x,score_rect.y,score_rect.w,score_rect.h);
         SDL_FreeSurface(text_surface);
     }
 

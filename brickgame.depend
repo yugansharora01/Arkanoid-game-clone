@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1608123793 source:d:\yash\c,c++\sdl game\brick game\draw.c
+	"headers.h"
+
+1608124135 d:\yash\c,c++\sdl game\brick game\headers.h
+	<SDL.h>
+	<SDL_image.h>
+	<stdio.h>
+	<string.h>
+	<SDL_ttf.h>
+	<stdlib.h>
+	<math.h>
+
+1607691765 source:d:\yash\c,c++\sdl game\brick game\hello.c
+	"headers.h"
+
+1608036826 source:d:\yash\c,c++\sdl game\brick game\render.c
+	"headers.h"
+
+1609155343 source:d:\yash\c,c++\sdl game\brick game\setup.c
+	"setup.h"
+
+1606827900 d:\yash\c,c++\sdl game\brick game\setup.h
+	"headers.h"
+
+1607086745 source:d:\yash\c,c++\sdl game\brick game\textures.c
+	"headers.h"
+
+1608036076 source:d:\yash\c,c++\sdl game\brick game\start.c
+	"start/start.h"
+
+1608128813 source:d:\yash\c,c++\sdl game\brick game\main.c
+	"headers.h"
+
+1608120655 source:d:\yash\c,c++\sdl game\brick game\start\start.c
+	"start.h"
+
+1607347862 d:\yash\c,c++\sdl game\brick game\start\headers.h
+	<SDL.h>
+	<SDL_image.h>
+	<stdio.h>
+	<string.h>
+	<SDL_ttf.h>
+	<stdlib.h>
+
+1608120661 d:\yash\c,c++\sdl game\brick game\start\start.h
+	<SDL.h>
+	<SDL_image.h>
+	<stdio.h>
+	<string.h>
+	<SDL_ttf.h>
+	<stdlib.h>
+

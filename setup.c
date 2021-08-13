@@ -18,32 +18,37 @@ SDL_Texture* loadtexture(SDL_Renderer* renderer,char *filename);
 
 void setup(SDL_Renderer *renderer){
     //the width and height of ball should be an add number
-
-    ball.width = 15;
-    ball.height = 15;
-    ball.x = 300;
-    ball.y = 300;
-    ball.cent_x = ball.x + (ball.width+1)/2;
-    ball.cent_y = ball.y + (ball.height+1)/2;
-    ball.vel_x = 2;
-    ball.vel_y = 2;
-
     paddle.width = 75;
     paddle.height = 15;
     paddle.x = WINDOW_WIDTH/2 - paddle.width/2;
     paddle.y = WINDOW_HEIGHT - 50;
 
+    ball.width = 15;
+    ball.height = 15;
+    ball.x = paddle.x + paddle.width/2;
+    ball.y = paddle.y - ball.height;
+    //ball.x = 180;
+    //ball.y = 0;
+    ball.cent_x = ball.x + (ball.width+1)/2;
+    ball.cent_y = ball.y + (ball.height+1)/2;
+    ball.vel_x = 2;
+    ball.vel_y = 2;
+
+    tile_setup();
+
     for(int i=0;i<60;i++){
         all_tiles[i].height = 20;
         all_tiles[i].width = 70;
+        all_tiles[i].cent_x = all_tiles[i].x + all_tiles[i].width;
+        all_tiles[i].cent_y = all_tiles[i].y + all_tiles[i].height;
     }
 
-    tile_setup(renderer);
+
     setup_tiletex(renderer);
 
 }
 
-void tile_setup(SDL_Renderer* renderer){
+void tile_setup(){
     int i=0,j,k=0;
     all_tiles[0].x = 20;
     all_tiles[0].y = 50;

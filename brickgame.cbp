@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="cgame" />
+		<Option title="brick_game" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -35,7 +35,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="headers.h" />
-		<Unit filename="hello.c">
+		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="render.c">
@@ -45,6 +45,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="setup.h" />
+		<Unit filename="start/start.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="start/start.h" />
 		<Unit filename="textures.c">
 			<Option compilerVar="CC" />
 		</Unit>
